@@ -62,6 +62,8 @@ To set a quota::
   setfattr -n ceph.quota.max_bytes -v 100000000 /some/dir     # 100 MB
   setfattr -n ceph.quota.max_files -v 10000 /some/dir         # 10,000 files
 
+To set quotas a client with the "p" flag is required. See also: https://docs.ceph.com/docs/master/cephfs/client-auth/#layout-and-quota-restriction-the-p-flag
+
 To view quota settings::
 
   getfattr -n ceph.quota.max_bytes /some/dir
